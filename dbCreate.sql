@@ -4,12 +4,13 @@ create table if not exists VOLUNTARIO
      NOMBRE_VOLUNTARIO varchar(20),
      REGION varchar(20),
      COMUNA varchar(20),
+     esVisible boolean,
      CIUDAD varchar(20));    
     
 create table if not exists HABILIDAD
     (ID_HABILIDAD serial primary key,
      NOMBRE_HABILIDAD varchar(20),
-     DESCRIPCION varchar(20));
+     DESCRIPCION varchar(40));
    
 create table if not exists VOL_HABILIDAD
     (ID_VOL_HABILIDAD serial primary key,
@@ -37,16 +38,20 @@ create table if not exists EME_HABILIDAD
      FOREIGN KEY (ID_EMERGENCIA) REFERENCES EMERGENCIA(ID_EMERGENCIA),
      FOREIGN KEY (ID_HABILIDAD) REFERENCES HABILIDAD(ID_HABILIDAD));
  
-create table if not exists TAREA
-    (ID_TAREA serial primary key,
-     NOMBRE_TAREA varchar(20),
-     CAPACIDAD int,
-     ID_EMERGENCIA int,
-     FOREIGN KEY (ID_EMERGENCIA) REFERENCES EMERGENCIA(ID_EMERGENCIA));
-	 
 create table if not exists ESTADO_TAREA
     (ID_ESTADO_TAREA serial primary key,
     NOMBRE varchar(20));
+
+create table if not exists TAREA
+    (ID_TAREA serial primary key,
+     NOMBRE_TAREA varchar(30),
+     CAPACIDAD int,
+     ID_EMERGENCIA int,
+     id_estado_tarea int,
+     esVisible boolean,
+     FOREIGN KEY (ID_EMERGENCIA) REFERENCES EMERGENCIA(ID_EMERGENCIA),
+     FOREIGN KEY (id_estado_tarea) REFERENCES ESTADO_TAREA(id_estado_tarea));
+	 
 	
 create table if not exists TAREA_HABILIDAD
     (ID_TAREA_HABILIDAD serial primary key,
