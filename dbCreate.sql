@@ -69,3 +69,15 @@ create table if not exists RANKING
     ID_TAREA int,
     FOREIGN KEY (ID_VOLUNTARIO) REFERENCES VOLUNTARIO(ID_VOLUNTARIO),
     FOREIGN KEY (ID_TAREA) REFERENCES TAREA(ID_TAREA));
+
+CREATE PROCEDURE updateStateTask(Id_t bigint)
+Language plpgsql as
+$$
+Begin
+    UPDATE tarea 
+    set id_estado_tarea = 3 
+    WHERE id_tarea = @Id_t AND capacidad = (SELECT COUNT(*) 
+                                             FROM ranking 
+                                             WHERE ranking.id_tarea = @Id_t and estadoTarea = 'Completada');
+end
+$$

@@ -1,10 +1,10 @@
 insert into VOLUNTARIO (RUT, NOMBRE_VOLUNTARIO, REGION, COMUNA, esVisible, CIUDAD) values
-(12343123, 'Antonio Silva', 'Araucanía', 'Temuco', true, 'Temuco'),
-(14557679, 'Rebeca Poblete', 'Araucanía', 'Temuco', true, 'Temuco'),
-(13113423, 'Mark Anthony', 'Arica y Parinacota', 'Arica', true, 'Azapa'),
-(11456732, 'Jack Black', 'Valparaiso', 'Concón', true, 'Concón'),
-(14534232, 'Mauricio Vicencio', 'Metropolitana', 'Santiago', true, 'Ciudad Gótica'),
-(16454313, 'Iosif Stalin', 'Moscovia', 'Kremlin', false, 'Moscú');
+(12343123, 'Antonio Silva', 'Araucanía', 'Temuco', 'true', 'Temuco'),
+(14557679, 'Rebeca Poblete', 'Araucanía', 'Temuco', 'true', 'Temuco'),
+(13113423, 'Mark Anthony', 'Arica y Parinacota', 'Arica', 'true', 'Azapa'),
+(11456732, 'Jack Black', 'Valparaiso', 'Concón', 'true', 'Concón'),
+(14534232, 'Mauricio Vicencio', 'Metropolitana', 'Santiago', 'true', 'Ciudad Gótica'),
+(16454313, 'Iosif Stalin', 'Moscovia', 'Kremlin', 'false', 'Moscú');
 
 insert into HABILIDAD (NOMBRE_HABILIDAD, DESCRIPCION) values
 ('Vehículo', 'Tiene vehículo y licencia para manejarlo'),
@@ -44,13 +44,13 @@ insert into ESTADO_TAREA (NOMBRE) values
 ('Completada'),
 ('Cancelada');
 
-insert into TAREA (NOMBRE_TAREA, CAPACIDAD, ID_EMERGENCIA, ID_estado_tarea) values
-('Llevar bolsas de Basura', 1, 1, 2),
-('Limpiar escombros', 2, 1, 2),
-('Evacuar heridos', 1, 1, 2),
-('Llevar agua para beber', 2, 3, 2),
-('Registro de heridos', 1, 3, 2),
-('Curar heridos', 2, 3, 2);
+insert into TAREA (NOMBRE_TAREA, CAPACIDAD, ID_EMERGENCIA, ID_estado_tarea, esVisible) values
+('Llevar bolsas de Basura', 1, 1, 2, 'true'),
+('Limpiar escombros', 2, 1, 2, 'true'),
+('Evacuar heridos', 1, 1, 2, 'true'),
+('Llevar agua para beber', 2, 3, 2, 'true'),
+('Registro de heridos', 1, 3, 2, 'true'),
+('Curar heridos', 2, 3, 2, 'true');
 
 insert into TAREA_HABILIDAD (ID_TAREA, ID_HABILIDAD) values
 (1, 1),
