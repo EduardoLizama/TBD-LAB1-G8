@@ -1,8 +1,8 @@
-package com.tbd.ejemplo1.repositories;
+package com.tbd.lab1.repositories;
 
 import java.util.List;
 
-import com.tbd.ejemplo1.models.Vol_habilidad;
+import com.tbd.lab1.models.Vol_habilidad;
 
 public interface vol_habilidadRepository {
     public List<Vol_habilidad> getAllVol_habilidades();

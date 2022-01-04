@@ -1,7 +1,7 @@
-package com.tbd.ejemplo1.services;
+package com.tbd.lab1.services;
 
-import com.tbd.ejemplo1.models.Habilidad;
-import com.tbd.ejemplo1.repositories.habilidadRepository;
+import com.tbd.lab1.models.Habilidad;
+import com.tbd.lab1.repositories.habilidadRepository;
 
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.DeleteMapping;

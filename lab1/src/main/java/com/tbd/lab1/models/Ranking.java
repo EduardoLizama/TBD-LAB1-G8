@@ -1,4 +1,4 @@
-package com.tbd.ejemplo1.models;
+package com.tbd.lab1.models;
 
 public class Ranking {
     private Long id_ranking;

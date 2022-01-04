@@ -1,7 +1,7 @@
-package com.tbd.ejemplo1.services;
+package com.tbd.lab1.services;
 
-import com.tbd.ejemplo1.models.Emergencia;
-import com.tbd.ejemplo1.repositories.emergenciaRepository;
+import com.tbd.lab1.models.Emergencia;
+import com.tbd.lab1.repositories.emergenciaRepository;
 
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.DeleteMapping;

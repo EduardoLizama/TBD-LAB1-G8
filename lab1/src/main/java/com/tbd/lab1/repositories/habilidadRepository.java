@@ -1,7 +1,7 @@
-package com.tbd.ejemplo1.repositories;
+package com.tbd.lab1.repositories;
 
 import java.util.*;
-import com.tbd.ejemplo1.models.Habilidad;
+import com.tbd.lab1.models.Habilidad;
 
 public interface habilidadRepository {
     public List<Habilidad> getAllHabilidades();

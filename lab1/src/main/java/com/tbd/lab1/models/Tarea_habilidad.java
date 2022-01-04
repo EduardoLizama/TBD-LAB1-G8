@@ -1,4 +1,4 @@
-package com.tbd.ejemplo1.models;
+package com.tbd.lab1.models;
 
 public class Tarea_habilidad {
     private Long id_tarea_habilidad;

@@ -1,8 +1,8 @@
-package com.tbd.ejemplo1.repositories;
+package com.tbd.lab1.repositories;
 
 import java.util.List;
 
-import com.tbd.ejemplo1.models.Vol_habilidad;
+import com.tbd.lab1.models.Vol_habilidad;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;

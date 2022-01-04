@@ -1,7 +1,7 @@
-package com.tbd.ejemplo1.repositories;
+package com.tbd.lab1.repositories;
 
 
-import com.tbd.ejemplo1.models.Voluntario;
+import com.tbd.lab1.models.Voluntario;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 import org.sql2o.Connection;

@@ -1,7 +1,7 @@
-package com.tbd.ejemplo1.repositories;
+package com.tbd.lab1.repositories;
 
 import java.util.*;
-import com.tbd.ejemplo1.models.Estado_tarea;
+import com.tbd.lab1.models.Estado_tarea;
 
 public interface estado_tareaRepository {
     public List<Estado_tarea> getAllEstado_tareas();

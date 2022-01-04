@@ -1,7 +1,7 @@
-package com.tbd.ejemplo1.services;
+package com.tbd.lab1.services;
 
-import com.tbd.ejemplo1.models.Estado_tarea;
-import com.tbd.ejemplo1.repositories.estado_tareaRepository;
+import com.tbd.lab1.models.Estado_tarea;
+import com.tbd.lab1.repositories.estado_tareaRepository;
 
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.DeleteMapping;

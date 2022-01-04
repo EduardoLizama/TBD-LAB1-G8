@@ -1,6 +1,6 @@
-package com.tbd.ejemplo1.repositories;
+package com.tbd.lab1.repositories;
 
-import com.tbd.ejemplo1.models.Emergencia;
+import com.tbd.lab1.models.Emergencia;
 import java.util.*;
 
 public interface emergenciaRepository {

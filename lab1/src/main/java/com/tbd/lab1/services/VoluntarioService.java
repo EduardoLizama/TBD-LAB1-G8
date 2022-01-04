@@ -1,7 +1,7 @@
-package com.tbd.ejemplo1.services;
+package com.tbd.lab1.services;
 
-import com.tbd.ejemplo1.models.Voluntario;
-import com.tbd.ejemplo1.repositories.voluntarioRepository;
+import com.tbd.lab1.models.Voluntario;
+import com.tbd.lab1.repositories.voluntarioRepository;
 
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.DeleteMapping;

@@ -1,7 +1,7 @@
-package com.tbd.ejemplo1.repositories;
+package com.tbd.lab1.repositories;
 
 import java.util.*;
-import com.tbd.ejemplo1.models.Institucion;
+import com.tbd.lab1.models.Institucion;
 
 public interface institucionRepository {
     public List<Institucion> getAllInstituciones();

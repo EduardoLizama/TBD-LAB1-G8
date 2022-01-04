@@ -1,7 +1,7 @@
-package com.tbd.ejemplo1.repositories;
+package com.tbd.lab1.repositories;
 
 import java.util.List;
-import com.tbd.ejemplo1.models.Ranking;
+import com.tbd.lab1.models.Ranking;
 
 public interface rankingRepository {
     public List<Ranking> getAllRankings();

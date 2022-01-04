@@ -1,6 +1,6 @@
-package com.tbd.ejemplo1.repositories;
+package com.tbd.lab1.repositories;
 
-import com.tbd.ejemplo1.models.Eme_habilidad;
+import com.tbd.lab1.models.Eme_habilidad;
 import java.util.*;
 
 public interface eme_habilidadRepository {
